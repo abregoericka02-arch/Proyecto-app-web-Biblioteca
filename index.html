@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Biblioteca - Login</title>
+    <!-- Tu hoja de estilos en CSS puro -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos FontAwesome para los campos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Contenedor principal del Login -->
+    <section class="login-wrapper">
+        <div class="login-card">
+            
+            <!-- Encabezado de la Tarjeta -->
+            <div class="login-header">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                </div>
+                <h1>Sistema de Biblioteca</h1>
+                <p>GESTIÓN DE CATÁLOGO Y PRÉSTAMOS</p>
+            </div>
+
+            <!-- Formulario de Login -->
+            <form id="form-login" class="login-form">
+                
+                <div class="form-group">
+                    <label for="usuario">USUARIO</label>
+                    <div class="input-icon-wrapper">
+                        <i class="fa-solid fa-user icon"></i>
+                        <input type="text" id="usuario" placeholder="Ej. usuario" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">CONTRASEÑA</label>
+                    <div class="input-icon-wrapper">
+                        <i class="fa-solid fa-lock icon"></i>
+                        <input type="password" id="password" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa-solid fa-right-to-bracket"></i> Ingresar
+                    </button>
+                    <button type="button" id="btn-registrar" class="btn btn-secondary">
+                        Registrar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Tu archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
